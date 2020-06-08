@@ -16,7 +16,7 @@ class VehiclesController extends Controller
     }
     
   // Used for storing the data into the database from the crud-panel's create form. 
-  // It's also working with two file uploads for a single image and for many images. 
+  // There is also the single & many files upload functionalities.
     public function store(Request $request)
     {
         $vehiclesmodel = $request->validate([
