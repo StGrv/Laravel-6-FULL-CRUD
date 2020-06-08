@@ -5,7 +5,8 @@ use Illuminate\Http\Request ;
 
 class VehiclesController extends Controller
 {    
-   // Used to display the crud-panel page as well as appending the search functionality & pagination. The important step here is to compact the variable.
+   // Used to display the crud-panel page as well as appending the search functionality & pagination.
+   // The important step here is to compact the variable.
     public function index(Request $request)
     {
         $vehsearch = $request->input('vehsearch') ;
@@ -14,7 +15,8 @@ class VehiclesController extends Controller
         return view('crud-panel', compact('vehiclesmodel')) ;
     }
     
-  // Used for storing the data into the database from the crud-panel's create form. It's also working with two file uploads for a single image and for many images. 
+  // Used for storing the data into the database from the crud-panel's create form. 
+  // It's also working with two file uploads for a single image and for many images. 
     public function store(Request $request)
     {
         $vehiclesmodel = $request->validate([
