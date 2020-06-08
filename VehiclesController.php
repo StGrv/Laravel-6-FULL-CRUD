@@ -14,7 +14,7 @@ class VehiclesController extends Controller
    
         return view('crud-panel', compact('vehiclesmodel')) ;
     }
-     
+      
   // Used for storing the data into the database from the crud-panel's create form. 
   // There is also the single & many files upload functionalities.
     public function store(Request $request)
